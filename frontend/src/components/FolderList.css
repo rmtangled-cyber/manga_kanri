@@ -1,0 +1,82 @@
+.folder-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.folder-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  min-height: 150px;
+}
+
+.folder-card:hover {
+  border-color: var(--accent);
+  background: var(--surface2);
+}
+
+.folder-icon { font-size: 40px; line-height: 1; }
+
+.folder-name {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  word-break: break-all;
+}
+
+.folder-edit-input {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+.folder-count {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.folder-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.folder-add-card {
+  border-style: dashed;
+  color: var(--text-muted);
+}
+.folder-add-card:hover { color: var(--text); }
+
+.folder-add-icon {
+  font-size: 32px;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.folder-new-form input {
+  width: 100%;
+  text-align: center;
+}
+
+.new-folder-btns {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.empty-msg {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 60px;
+  font-size: 15px;
+}
